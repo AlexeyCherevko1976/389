@@ -1,0 +1,14 @@
+@import "variables.less";
+.posAbs(@t:20px, @l:20px, @w:20px, @h:20px){
+    position: absolute;
+    top: @t;
+    left: @l;
+    width: @w;
+    height: @h;
+}
+
+
+.cellM(@nLine:0, @nCol:0, @t0,@dt,@h,@l0,@dl,@w){
+	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h; position: absolute;
+}
+
